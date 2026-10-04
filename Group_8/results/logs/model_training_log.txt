@@ -1,0 +1,52 @@
+Fitness Classification Project
+Model Training Execution Log
+
+Problem Type:
+- Binary classification
+
+Target Variable:
+- is_fit
+
+Train/Test Split:
+- Training: 80%
+- Testing: 20%
+- Stratified split used
+- random_state = 42
+
+Validation:
+- Stratified 5-Fold Cross-Validation
+
+Hyperparameter Tuning:
+- Method: GridSearchCV
+- Main scoring metric: F1-score
+
+Models Trained:
+1. Logistic Regression
+   - Main hyperparameter: C
+
+2. K-Nearest Neighbors (KNN)
+   - Main hyperparameters: n_neighbors, weights, p
+
+3. Support Vector Machine (SVM)
+   - Main hyperparameters: C, kernel, gamma
+
+4. Decision Tree
+   - Main hyperparameters: max_depth, min_samples_split, criterion
+
+5. Random Forest
+   - Main hyperparameters: n_estimators, max_depth, min_samples_split
+
+6. Gradient Boosting
+   - Main hyperparameters: n_estimators, learning_rate, max_depth
+
+Evaluation Metrics:
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+- Confusion Matrix
+- Classification Report
+
+Status:
+- Six individual machine-learning models prepared for training, tuning, evaluation, and comparison.

@@ -1,0 +1,52 @@
+Fitness Classification Project
+Preprocessing Execution Log
+
+Dataset:
+- File: fitness_dataset.csv
+- Rows: 2000
+- Columns: 11
+
+Missing Values:
+- Feature: sleep_hours
+- Missing values before preprocessing: 160
+- Method used: Median imputation
+- Missing values after preprocessing: 0
+
+Smokes Data Cleaning:
+- yes -> 1
+- no -> 0
+- 1 -> 1
+- 0 -> 0
+- Result: smoking-status values converted to a consistent numerical format
+
+Outlier Handling:
+- Feature: weight_kg
+- Method: IQR (Interquartile Range)
+- Approximate outliers detected: 21
+- Treatment: Capping using lower and upper IQR limits
+
+Categorical Encoding:
+- Feature: gender
+- F -> 0
+- M -> 1
+
+Feature Engineering:
+- New feature: BMI
+- Formula: BMI = weight_kg / (height_m ^ 2)
+
+Standardization / Scaling:
+- Method: StandardScaler
+- Purpose: Put numerical features on a comparable scale
+- Expected result: Mean approximately 0 and standard deviation approximately 1
+- Target variable is_fit was not scaled
+
+EDA Visualizations Generated:
+- sleep_hours_histogram.png
+- smoking_status_bar_chart.png
+- weight_kg_boxplot.png
+- gender_vs_is_fit.png
+- bmi_vs_is_fit_scatter.png
+- correlation_heatmap.png
+
+Status:
+- Preprocessing pipeline completed successfully.

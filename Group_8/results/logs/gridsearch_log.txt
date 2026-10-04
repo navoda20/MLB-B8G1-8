@@ -1,0 +1,45 @@
+Fitness Classification Project
+Hyperparameter Tuning Log
+
+Tuning Method:
+- GridSearchCV
+
+Cross-Validation:
+- StratifiedKFold
+- Number of folds: 5
+
+Scoring Metric:
+- F1-score
+
+Parameter Grids:
+
+Logistic Regression:
+- C: [0.01, 0.1, 1, 10, 100]
+
+KNN:
+- n_neighbors: [3, 5, 7, 9, 15, 21]
+- weights: [uniform, distance]
+- p: [1, 2]
+
+SVM:
+- C: [0.1, 1, 10]
+- kernel: [linear, rbf]
+- gamma: [scale, auto]
+
+Decision Tree:
+- max_depth: [3, 5, 8, 10, None]
+- min_samples_split: [2, 5, 10, 20]
+- criterion: [gini, entropy]
+
+Random Forest:
+- n_estimators: [100, 200]
+- max_depth: [5, 10, None]
+- min_samples_split: [2, 5, 10]
+
+Gradient Boosting:
+- n_estimators: [50, 100, 200]
+- learning_rate: [0.01, 0.05, 0.1]
+- max_depth: [2, 3, 4]
+
+Note:
+- Best parameter values and final scores should be taken from the executed model notebooks.
